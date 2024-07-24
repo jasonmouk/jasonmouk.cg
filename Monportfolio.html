@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue de Graphiste</title>
+    <link rel="stylesheet" href="Css/page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1> BIENVENU SUR MON PORTFOLIO
+                <div class="profile">
+                    <img src="Images/CONFERENCE(51).jpg" alt="Photo de profil">
+                </div>
+            </h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="#about">À PROPOS</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>À Propos</h2>
+        <p>Bienvenue sur mon portfolio ! Je m'appelle Moukanza Jason Rossyl Emmanuel, né le 11 Mai 2002 à Brazzaville, Citoyen d'origine
+             Congolaise résidant à Brazzaville, aupavant étudiant à la Faculté des Sciences Economiques de l'Université Marien Ngouabi
+             </p>
+             <p>Je me suis lancé dans l'infographie en 2021; Infographiste avec une expérience de quatres années dans la 
+                conception graphique, je crée des visuels qui captivent et communiquent efficacement votre message.
+               Je suis également Community Manager.</p>
+            <p>
+                J'ai débuté mes premières prestations en freelance quelques mois après ma formation en infographie, en suite au sein
+                 de l'agence Melesisoft dans la même année s'est suivis une langue période en tant que freelance. 
+            </p>
+            <p> En Novembre 2023, Je signe un CDD de troix mois en qualité d'infographiste consultant au sein de l'ONG PAD 
+                (Programme d'Action pour le Développement) Après une durée de six mois mon aventure avec l'ONG s'est achevée. </p>
+                <p> Depuis le mois de Juillet 2024, je travaille comme Community Manager-Infographiste Assistant au sein de l'entreprise 
+                    de construction Congo - Travaux - Group.
+                </p>
+                <p> Je suis également le Co-fondateur et Chargé de la communication de l'agence Studio Designer à Brazzaville,
+                     Chargé du Marketing et de la communication de Kargo Brazzaville une agence de vente en ligne des accesoires 
+                     informatiques.</p>
+    </section>
+
+    <section id="services" class="container">
+        <h2>Services</h2>
+        <ul class="services-list">
+            <li>Conception de logo</li>
+            <li>Branding et identité visuelle</li>
+            <li>Design de cartes de visite</li>
+            <li>Création de brochures et flyers</li>
+            <li>Design de sites web</li>
+            <li>Création des pages facebook Professionnelles</li>
+            <li>Gestion des médias sociaux</li>
+            <li>Création de contenus</li>
+            <li>Publicité Facebook</li>
+        </ul>
+    </section>
+
+    <section id="portfolio" class="container">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="Images/ECCELENZA.000.jpg" alt="Projet 1">
+                <h3>ECCELENZA</h3>
+                <p>Centre de formation en langue Italiènne</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="Images/Boostez2.jpg" alt="Projet 2">
+                <h3>Boostez</h3>
+                <p>Affiche services publicité facebook </p>
+            </div>
+            <div class="portfolio-item">
+                <img src="Images/000.jpg" alt="Projet 3">
+                <h3>CARTES DE VISITES</h3>
+                <p>Carte de visite du Directeur Général Adjoint de Congo - Travaux - Group</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="Images/2024.8.jpg" alt="Projet 4">
+                <h3>FESTIVAL DE GOSPEL</h3>
+                <p>Affiche des inscriptions au Festival International de Gospel</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="button" onclick="sendMail()">Envoyer</button>
+        </form>
+        <script>
+            function sendMail() {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+    
+                const subject = encodeURIComponent('Nouveau message de ' + name);
+                const body = encodeURIComponent(Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message});
+    
+                window.location.href = mailto:moukjasn@gmail.com?subject=${subject}&body=${body};
+            }
+        </script>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Jason Moukanza. Tous droits réservés.</p>
+        </div>
+        <div class="social-media-links">
+            <!-- Lien Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61556802681684&mibextid=ZbWKwL" target="_blank" class="social-link facebook-link">
+                <i class="fab fa-facebook-f"></i> <!-- Icône Facebook -->
+            </a>
+            <!-- Lien Instagram -->
+            <a href="https://www.instagram.com/coach_jason_242?igsh=Ym44dmNoYmVkdTR1" target="_blank" class="social-link instagram-link">
+                <i class="fab fa-instagram"></i> <!-- Icône Instagram -->
+            </a>
+            <!-- Lien LinkedIn -->
+            <a href="https://www.linkedin.com/in/jason-moukanza-417898226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link linkedin-link">
+                <i class="fab fa-linkedin-in"></i> <!-- Icône LinkedIn -->
